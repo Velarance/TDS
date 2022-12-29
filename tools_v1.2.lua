@@ -107,7 +107,7 @@ lobbytab:Button('Join LowPop', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/L00PGBob/Test/main/join%20less%20server",true))()
 end)
 ----------------------------------------------------------------------------------------------------------------------
--- lobbytab:Label('                                 ━━━━━━ Crates ━━━━━━')
+lobbytab:Label('                                 ━━━━━━ Crates ━━━━━━')
 
 lobbytab:Button('✨ Buy Basic', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/L00PGBob/Test/main/buy%20basic",true))()
@@ -141,7 +141,7 @@ lobbytab:Button('Open Deluxe', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/L00PGBob/Test/main/open%20deluxe",true))()
 end)
 ----------------------------------------------------------------------------------------------------------------------
---otherstab:Label('                             ━━━━━━ Auto Ability ━━━━━━')
+otherstab:Label('                             ━━━━━━ Auto Ability ━━━━━━')
 
 otherstab:Toggle('Commander', function(bool)
     getgenv().Commander = bool
@@ -182,12 +182,7 @@ localtab:Button('Noclip (T)', function()
 end)
 ----------------------------------------------------------------------------------------------------------------------
 credittab:Label('🌟 MoneyMaker')
-credittab:Label('🌟 Made By LOOP')
-credittab:Label('❤️️ Big Credit to MintTea#9260')
-credittab:Label('💙 ! phil#9999 / special ed kid')
-credittab:Label('💙 RoboCop#8899')
-credittab:Label('💙 abunda77#2455')
-credittab:Label('💙 Aidez (v3rm)')
+credittab:Label('🌟 Made By Velarance')
 ----------------------------------------------------------------------------------------------------------------------
 uitab:Button('Destroy GUI', function()
     win:Exit()
