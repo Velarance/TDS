@@ -1,6 +1,5 @@
 getgenv().autoSkip = false; -- true/false
 
-getgenv().Commander = false
 getgenv().Swarmer = false
 getgenv().Gladiator = false
 getgenv().Medic = false
@@ -14,17 +13,6 @@ function doSkip()
         end
     end)
 end
-
-function doCAbility()
-    spawn(function()
-        while Commander == true do
-            local args = {[1] = "Troops",[2] = "Abilities",[3] = "Activate",[4] = {["Name"] = "Call Of Arms",["Troop"] = workspace.Towers.Red}}
-            game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(args))
-        wait(0.2)
-        end
-    end)
-end
-
 -------------------------------------------------------------------------------------------------------------------------
 local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
 
@@ -37,7 +25,7 @@ local win = BlekLib:Create({
     }
 })
 
-local maintab = win:Tab('Main          ')
+local maintab = win:Tab('Game          ')
 local lobbytab = win:Tab('Lobby          ')
 local otherstab = win:Tab('Other          ')
 local localtab = win:Tab('Local          ')
@@ -45,7 +33,7 @@ local credittab = win:Tab('Credits          ')
 local uitab = win:Tab('UI')
 
 ----------------------------------------------------------------------------------------------------------------------
-maintab:Label('                                 ━━━━━━ Main ━━━━━━')
+maintab:Label('                                 ━━━━━━ Game ━━━━━━')
 
 maintab:Button('Skip (E)', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/L00PGBob/Tower-Defense-Simulator-3/main/To%20skip%20press%20E",true))()
